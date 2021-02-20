@@ -12,7 +12,7 @@ const problems = {
   "Loading .*.vmf\n.*ConVarRef gpu_level doesn't point to an existing ConVar\nFinished. Press a key to close.":'A fatal error occured while building! Open the problem checker (<code>Alt+P</code>) for a list of possible causes.',
   'Brush \\d+: nummapbrushes == MAX_MAP_BRUSHES':'You have reached the maximum number of brushes. If you have a large map, try splitting it into multiple parts.',
   'Brush \\d+: ParseDispInfoChunk: nummapdispinfo > MAX_MAP_DISPINFO':'You have reached the maximum number of displacements. (Unverified reason)',
-  'LoadPortals: reading portal \\d+\\nFinished. Press a key to close.':'You have reached the maximum number of visleaves. Make sure you are using func_detail correctly!'
+  'LoadPortals: reading portal (\\d|\\.)+(\\n)?Finished\\. Press a key to close\\.':'VVIS failed unexpectedly. Make sure your build programs are configured correctly!'
 }
 
 
