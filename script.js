@@ -23,7 +23,7 @@ consoletxt.oninput = function() {
 
 function evalProblem(val) {
   if (val == '')
-    return 'Answers will appear here.'
+    return 'Potential solutions will appear here.'
   var out
   Object.keys(problems).forEach((v,i)=>{
     let rg = new RegExp(v)
@@ -32,7 +32,7 @@ function evalProblem(val) {
       return
     }
   })
-  return out||'No solutions found. Ask a person! (Also report it so we can add it to this tool!)'
+  return out||'No solutions found.'
 }
 
 document.body.classList.add('bodyactive')
